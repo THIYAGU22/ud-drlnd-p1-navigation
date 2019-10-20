@@ -9,15 +9,15 @@ Training an agent with the help of DQN to navigate (and collect bananas!) in a l
 
 The environment provided is a modified version of Unity - ML Agents BANANA COLLECTOR
 
-## GOAL 
+### GOAL 
 The goal of the agent is to pick/collect the yellow bananas eliminatong the blue bananas ! This projects intention is to get the environment solved when the average return for consecutive 100 episode is greater than 13
 
-# REWARD 
+### REWARD 
  The agent receives +1 when it collects Yellow Banana and -1 for Blue Banana
 - **`+1`** - Yellow banana
 - **`-1 ** - Blue Banana
 
-# Action Space
+### Action Space
  
 The agent learns the best actions from the experience obtained from the observation
 - **`0`** - move forward.
@@ -62,7 +62,7 @@ It will open up the web Browser . If its not automatically opening up the browse
 If you run the Report.ipynb Notebook the environment gets solved by 1000 episodes at the maximum possible case 
 
 
-# Learning Algorithm
+### Learning Algorithm
 The agent is trained with Deep-Q-Learning Algorithm along with following hyperparametrs
 
 * Neural Network Architecture:
@@ -73,7 +73,9 @@ The agent is trained with Deep-Q-Learning Algorithm along with following hyperpa
 | Hidden Layer  | 1 ( Linear with 256 ) + ReLu |
 | Output Layer  | Linear with 4 nodes          |
 
-* Optimization Algorith 
+
+
+* Optimization Algorithm
   * Adam
     - Learning rate :
       * 5e-4
@@ -89,3 +91,11 @@ The agent is trained with Deep-Q-Learning Algorithm along with following hyperpa
 | Gamma                | 0.99  |
 | TAU                  | 1e-3  |
 
+### Results obtained :
+Trained DQN parameters is saved in the file `qnetwork_local_checkpoint.pth` , The agent ables to solves the environment and task gets over at epsisode 388 ( recorded time) 
+
+### Ideas for future work :
+
+* Dueling Network : By implementing Dueling Network it can able to learn state space efficiently and to test out how the additional information about the compositon of action-values are added during estimation 
+
+* Priotorized Experience Replay
