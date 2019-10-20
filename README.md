@@ -92,7 +92,7 @@ The agent is trained with Deep-Q-Learning Algorithm along with following hyperpa
 | TAU                  | 1e-3  |
 
 ### Results obtained :
-Trained DQN parameters is saved in the file `qnetwork_local_checkpoint.pth` , The agent ables to solves the environment and task gets over at epsisode 388 ( recorded time) 
+Trained DQN parameters is saved in the file `qnetwork_local_checkpoint.pth` , The agent ables to solves the environment and task gets over at epsisode 288 ( recorded time) 
 
 ### Ideas for future work :
 
